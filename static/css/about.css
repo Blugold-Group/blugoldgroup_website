@@ -2,6 +2,10 @@
     About Page Styling
    ==================== */
 
+.text-container {
+    margin: 15px;
+}
+
 #members-header {
     text-align: center;
 }

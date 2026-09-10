@@ -1,0 +1,112 @@
+/* BASE STYLES FOR ALL PAGES */
+
+:root {
+    /* color scheme variables */
+    --background: rgb(28, 40, 59);
+    --foreground: rgb(39, 55, 80);
+    --border: rgb(66, 94, 133);
+    --text: rgb(255, 228, 196);
+}
+
+
+* {
+    color: var(--text);
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    background-color: var(--background);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* container defaults */
+body > div,
+body > header,
+body > nav,
+body > main,
+body > section,
+body > footer {
+    margin: auto;
+    background-color: var(--foreground);
+    border: 3px solid var(--border);
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Header Text Fonts */
+h1, h2 {
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Buttons (a elements in this case lol) */
+#button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-button {
+    border: 3px solid var(--border);
+    background-color: var(--foreground);
+    transition-duration: 0.2s;
+    width: 22%;
+    min-width: 140px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+}
+
+.nav-button:hover {
+    background-color: var(--border);
+}
+
+/* Used for nav buttons container & projects continer */
+.invis-div {
+    border: none;
+    background: none;
+}
+
+.invis-div > div {
+    /* Parody body > div coloring */
+    background-color: var(--foreground);
+    border: 3px solid var(--border);
+} 
+
+
+/* Website Header */
+#website-header {
+    text-align: center;
+}
+
+#website-header > h1 {
+    margin: 15px auto 15px auto;
+}
+
+/* Website Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer > div {
+    margin: 0px 15px 0px 15px;
+}
