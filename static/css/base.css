@@ -9,12 +9,7 @@
 }
 
 html {
-    color: var(--text);
     background-color: var(--background);
-    font-family: "Source Code Pro", monospace;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
 }
 
 body {
@@ -43,14 +38,19 @@ body > footer {
 
 /* Header Text Fonts */
 h1, h2 {
+    color: var(--text);
     font-family: "Doto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
 }
 
-a {
+p, a, h3, span { 
     color: var(--text);
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #header-link {
