@@ -9,7 +9,7 @@
 		file_server
 	}
 	handle_path /calendar {
-		redir https://example.com permanent
+		redir https://blugoldconnect.uwec.edu/feeds?type=club&type_id=35774&tab=events permanent
 	}
 	handle_path /discord {
 		redir https://discord.gg/MHhBFZth7b permanent
