@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Loading...</p><a id="clickable" style="display:none;"></a>
+  <script>
+    // Initial redirect
+    var websiteURL = "https://discord.gg/MHhBFZth7b";
+    var pageLink = document.getElementById("clickable");
+    pageLink.href = websiteURL;
+    pageLink.click();
+
+    // Backup link in case redirect fails or gets blocked 
+    setTimeout(delay, 2500);
+    function delay() { 
+      document.body.innerHTML = "<p>Failed to redirect you. Click <a id='clickable'>here</a>.</p>";
+      document.getElementById("clickable").href = websiteURL;
+    };
+  </script>
+</body>
+</html>
